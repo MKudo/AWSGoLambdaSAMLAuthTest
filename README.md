@@ -1,5 +1,4 @@
 # AWSGoLambdaSAMLAuthTest
-==========
 Test project to use SAML on AWS for MSA service with Lambda(Go)
 
 ## Description
@@ -24,5 +23,4 @@ I changed localstack web ui port from 8080 to 9080. 8080 is used by MySQL DB for
 ## Licence
 
 ## Author
-
-[Kudo]
+- [Masahiko Kudo](https://github.com/MKudo)
