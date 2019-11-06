@@ -4,13 +4,9 @@ Test project to use SAML on AWS for MSA service with Lambda(Go)
 ## Description
 
 ## Requirement
-- dep
-  - To check out this project into GOPATH
-  - Or, change your GOPATH
 - docker
   - Using localstack docker container for test
   - Using keycloak docker container for test
-- go
 
 ## Usage
 1. Check your $TMPDIR environment variable. If it not exist, you need to set it. Or if it contains a symbolic link, you need to set it actual directory.
