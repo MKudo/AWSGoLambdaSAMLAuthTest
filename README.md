@@ -32,7 +32,7 @@ aws lambda create-function --endpoint-url http://localhost:4574 --region us-east
 1. Test function with aws cli
 
 ```
-aws lambda --endpoint-url=http://localhost:4574 invoke --function-name test --payload '{"name":"AWS"}' log.txt
+aws lambda invoke --endpoint-url=http://localhost:4574 --function-name test log.txt
 ```
 
 ### Note
