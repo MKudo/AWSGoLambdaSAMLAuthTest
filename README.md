@@ -14,9 +14,8 @@ Test project to use SAML on AWS for MSA service with Lambda(Go)
 
 ## Usage
 1. Check your $TMPDIR environment variable. If it not exist, you need to set it. Or if it contains a symbolic link, you need to set it actual directory.
-1. Wake up docker container with `./localstack/docker-compose.yml`
+1. Wake up docker container with `./docker/docker-compose.yml`
 1. Create function for localstack test
-1. Wake up keycloak container with `./keycloak/docker-compose.yml`
 
 ### localstack test function
 See `src/test`. The Hello function is [sample go function](https://docs.aws.amazon.com/ja_jp/lambda/latest/dg/go-programming-model-handler-types.html).
@@ -36,7 +35,7 @@ aws lambda invoke --endpoint-url=http://localhost:4574 --function-name test log.
 ```
 
 ### Note
-I changed localstack web ui port from 8080 to 9080. 8080 is used by Keycloak web ui.
+I changed keycloak web ui port from 8080 to 8090. 8080 is used by localstack's dashboard.
 
 ## Know Issues
 
